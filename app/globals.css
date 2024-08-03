@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Add these imports at the top of your CSS file or in your _app.js/_app.tsx */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body {
+  margin: 0;
+  background: #fcffeb;
+}
+
+.grid-item {
+  perspective: 1000px;
+  transition: all 0.4s ease-in;
+}
+.grid-item .image-overlay {
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+  justify-content: space-between;
+}
+.grid-item .flip-image {
+  text-align: left;
+  border-radius: 8px;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+.grid-item:hover .image-overlay {
+  transform: rotateY(180deg);
+}
+.grid-item:hover .flip-image {
+  pointer-events: auto;
+  transform: rotateY(0deg);
+}
+
+/* FinguardHS.css */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.shadow-inner {
+  box-shadow: 0px 3.356px 16.612px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.hidden-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+/* @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+/* @media (max-width: 768px) {
+  .grid-cols-2 > :nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+  }
+} */
