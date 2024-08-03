@@ -57,7 +57,7 @@ const HowToInstall = () => {
       </Zoom>
 
       <div
-        className="hidden md:flex w-full pl-24 pt-12 gap-10 overflow-x-scroll"
+        className="hidden md:flex w-full pl-24 pt-12 gap-10 overflow-x-scroll hidden-scrollbar"
         style={{
           scrollbarWidth: "none",
           scrollBehavior: "smooth",
