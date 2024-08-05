@@ -5,7 +5,7 @@ import product from "../../public/HomePage/Product/product.png";
 import { Zoom } from "react-awesome-reveal";
 function Product() {
   const BuyNow = () => {
-    window.location.href = "/buy-now";
+    window.location.href = "/product/finguard-hs-universal-180-degree/";
   };
   return (
     <div className="flex flex-col ">

@@ -15,15 +15,46 @@ const socialMediaIcons = [
 const footerSections = [
   {
     title: "Get Started",
-    links: ["About", "Query", "Products"],
+    links: [
+      {
+        title: "About",
+        url: "/about/",
+      },
+      {
+        title: "Query",
+        url: "/contact/",
+      },
+      {
+        title: "Products",
+        url: "/product/finguard-hs-universal-180-degree/",
+      },
+    ],
   },
   {
     title: "Useful",
-    links: ["Privacy Policy", "Terms & Conditions", "Refund & Shipping"],
+    links: [
+      {
+        title: "Privacy Policy",
+        url: "/privacy-policy/",
+      },
+      {
+        title: "Terms & Conditions",
+        url: "/terms-conditions/",
+      },
+      {
+        title: "Refund & Shipping",
+        url: "/return-refund-and-shipping/",
+      },
+    ],
   },
   {
     title: "Get In Touch",
-    links: ["customercare@finguardindia.com"],
+    links: [
+      {
+        title: "customercare@finguardindia.com",
+        url: "mailto:customercare@finguardindia.com",
+      },
+    ],
   },
 ];
 
@@ -70,11 +101,7 @@ function Footer() {
                   key={linkIndex}
                   className="text-[#3A3A3A] font-[400] py-4 text-[16px]"
                 >
-                  {section.title === "Get In Touch" ? (
-                    <a href={`mailto:${link}`}>{link}</a>
-                  ) : (
-                    link
-                  )}
+                  <a href={link.url}>{link.title}</a>
                 </h3>
               ))}
             </div>

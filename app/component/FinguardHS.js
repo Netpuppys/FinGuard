@@ -21,7 +21,7 @@ function FinguardHS() {
     }
   };
   const BuyNow = () => {
-    window.location.href = "/buy-now";
+    window.location.href = "/product/finguard-hs-universal-180-degree/";
   };
 
   return (

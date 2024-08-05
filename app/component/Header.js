@@ -13,7 +13,16 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
   const BuyNow = () => {
-    window.location.href = "/buy-now";
+    window.location.href = "/product/finguard-hs-universal-180-degree/";
+  };
+  const About = () => {
+    window.location.href = "/about/";
+  };
+  const Testimonials = () => {
+    window.location.href = "/testimonials/";
+  };
+  const Contact = () => {
+    window.location.href = "/contact/";
   };
   const Home = () => {
     window.location.href = "/";
@@ -28,18 +37,21 @@ const Header = () => {
             alt="Header Logo"
           />
         </Link>
-        <div className="hidden md:flex justify-between xl:w-[20rem] 2xl:w-[27.065rem] bg-[#FAFAC6] xl:px-10 2xl:px-14 xl:py-2 2xl:py-4 rounded-full">
+        <div className="hidden md:flex justify-between w-[20rem] 2xl:w-[27.065rem] bg-[#FAFAC6] px-10 2xl:px-14 py-2 2xl:py-4 rounded-full">
           <button onClick={Home}>Home</button>
-          <button>About</button>
-          <button>Testimonials</button>
+          <button onClick={About}>About</button>
+          <button onClick={Testimonials}>Testimonials</button>
         </div>
         <div className="hidden md:flex gap-3">
-          <button className="bg-[#474350] xl:px-8 2xl:px-10 xl:py-2 2xl:py-4 rounded-full text-white">
+          <button
+            onClick={Contact}
+            className="bg-[#474350] px-8 2xl:px-10 py-2 2xl:py-4 rounded-full text-white"
+          >
             Contact
           </button>
           <button
             onClick={BuyNow}
-            className="bg-[#FECDAA] xl:px-8 2xl:px-10 xl:py-2 2xl:py-4 rounded-full text-black"
+            className="bg-[#FECDAA] px-8 2xl:px-10 py-2 2xl:py-4 rounded-full text-black"
           >
             Buy Now
           </button>
@@ -56,9 +68,9 @@ const Header = () => {
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center bg-[#FAFAC6] p-4 rounded-md mt-4 space-y-2">
           <button onClick={Home}>Home</button>
-          <button>About</button>
-          <button>Testimonials</button>
-          <button>Contact</button>
+          <button onClick={About}>About</button>
+          <button onClick={Testimonials}>Testimonials</button>
+          <button onClick={Contact}>Contact</button>
           <button onClick={BuyNow}>Buy Now</button>
         </div>
       )}

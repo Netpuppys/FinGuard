@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Zoom } from "react-awesome-reveal";
 const Banner = () => {
   const BuyNow = () => {
-    window.location.href = "/buy-now";
+    window.location.href = "/product/finguard-hs-universal-180-degree/";
   };
   return (
     <div className="block mt-20 md:mt-0 md:flex max-w-full justify-between">
@@ -17,12 +17,12 @@ const Banner = () => {
           <h3 className="text-[#474350] text-[18px] xl:text-[42px] 2xl:text-[54px] font-medium">
             Protecting Little Fingers:
           </h3>
-          <h4 className="text-[#474350] text-[25px] xl:text-[60px] 2xl:text-[76px] font-semibold md:-mt-5">
+          <h4 className="text-[#474350] text-[25px] xl:text-[60px] 2xl:text-[76px] font-semibold xl:-mt-5">
             One Door at a Time!
           </h4>
 
-          <div className="hidden md:block border-l-2 border-[#FE4446] px-7 py-3">
-            <h5 className="text-[#2C2C2C] xl:text-[15px] 2xl:text-[17px]">
+          <div className="hidden md:block border-l-2 border-[#FE4446] px-5 xl:px-7 py-2 xl:py-3">
+            <h5 className="text-[#2C2C2C] text-[13px] xl:text-[15px] 2xl:text-[17px]">
               With Finguard, we&apos;re not just guarding doors. We&apos;re
               guarding childhood, one finger at a time. We&apos;re guarding
               smiles, giggles, and the carefree exploration of your little ones.
@@ -33,7 +33,7 @@ const Banner = () => {
             </h5>
             <button
               onClick={BuyNow}
-              className="bg-[#FECDAA] rounded-3xl xl:px-6 xl:py-2 2xl:px-8 2xl:py-3 mt-4"
+              className="bg-[#FECDAA] rounded-3xl px-6 py-2 2xl:px-8 2xl:py-3 mt-4"
             >
               Buy Now
             </button>

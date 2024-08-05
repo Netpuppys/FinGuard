@@ -31,7 +31,7 @@ const Card = () => {
               {card.title}
             </p>
             <Image
-              className="w-[50%] h-auto"
+              className="w-[30%] xl:w-[50%] h-auto"
               src={card.image}
               alt={card.title}
             />
